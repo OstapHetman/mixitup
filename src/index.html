@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MixItUp</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Style-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Latest compiled and minified FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <!-- Start Navbar Here -->
+    <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleCenteredNav" aria-controls="navbarsExampleCenteredNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExampleCenteredNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Filter Products <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar Here -->
+
+    <div class="container mt-5 d-flex justify-content-center">
+        <div class="row">
+            <button type="button" class="btn btn-outline-warning btn-sm mr-3" data-filter="all">All</button>
+            <button type="button" class="btn btn-secondary btn-sm mr-3" data-filter=".category-a">Category A</button>
+            <button type="button" class="btn btn-secondary btn-sm mr-3" data-filter=".category-b">Category B</button>
+            <button type="button" class="btn btn-secondary btn-sm mr-3" data-filter=".category-c">Category C</button>
+
+            <button type="button" class="btn btn-secondary btn-sm mr-3" data-sort="price:asc">Sort by price (low to high)</button>
+            <button type="button" class="btn btn-secondary btn-sm mr-3" data-sort="price:desc">Sort by price (high to low)</button>
+
+            <button type="button" class="btn btn-secondary btn-sm mr-3" data-sort="name:asc">Sort by name (A-Z)</button>
+            <button type="button" class="btn btn-secondary btn-sm mr-3" data-sort="name:desc">Sort by name (Z-A)</button>
+
+        </div>
+    </div>
+
+    <div class="container mt-5" id="mix-wrapper">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pt-4 mix category-a item" data-order="1" data-price="120.99" data-name="Zoozap">
+                <div class="card">
+                    <img class="card-img-top w-50 m-auto pt-3" src="img/product.png" alt="Card image cap">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Zoozap</h4>
+                        <p class="card-text text-success font-weight-bold">120$</p>
+                        <button class="btn btn-outline-success w-50">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pt-4 mix category-a item" data-order="2" data-price="219.99" data-name="Ecoovetam">
+                <div class="card">
+                    <img class="card-img-top w-50 m-auto pt-3" src="img/product.png" alt="Card image cap">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Ecoovetam</h4>
+                        <p class="card-text text-success font-weight-bold">219$</p>
+                        <button class="btn btn-outline-success w-50">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pt-4 mix category-a item" data-order="3" data-price="37.99" data-name="Blacktouch">
+                <div class="card">
+                    <img class="card-img-top w-50 m-auto pt-3" src="img/product.png" alt="Card image cap">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Blacktouch</h4>
+                        <p class="card-text text-success font-weight-bold">37$</p>
+                        <button class="btn btn-outline-success w-50">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pt-4 mix category-b item" data-order="4" data-price="99.99" data-name="Indom">
+                <div class="card">
+                    <img class="card-img-top w-50 m-auto pt-3" src="img/product.png" alt="Card image cap">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Indom</h4>
+                        <p class="card-text text-success font-weight-bold">99$</p>
+                        <button class="btn btn-outline-success w-50">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pt-4 mix category-b item" data-order="5" data-price="67.99" data-name="Andom">
+                <div class="card">
+                    <img class="card-img-top w-50 m-auto pt-3" src="img/product.png" alt="Card image cap">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Andom</h4>
+                        <p class="card-text text-success font-weight-bold">67$</p>
+                        <button class="btn btn-outline-success w-50">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pt-4 mix category-b item" data-order="6" data-price="555.99" data-name="Dong Soneco">
+                <div class="card">
+                    <img class="card-img-top w-50 m-auto pt-3" src="img/product.png" alt="Card image cap">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Dong Soneco</h4>
+                        <p class="card-text text-success font-weight-bold">555$</p>
+                        <button class="btn btn-outline-success w-50">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 pt-4 mix category-c item" data-order="7" data-price="238.99" data-name="Can-Plus">
+                <div class="card">
+                    <img class="card-img-top w-50 m-auto pt-3" src="img/product.png" alt="Card image cap">
+                    <div class="card-block text-center">
+                        <h4 class="card-title">Can-Plus</h4>
+                        <p class="card-text text-success font-weight-bold">238$</p>
+                        <button class="btn btn-outline-success w-50">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest compiled and minified JQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

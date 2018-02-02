@@ -1,2 +1,1 @@
-# mixitup
-tutorial
+It's a Project Starter Pack based on Bootstrap 3, SASS and Gulp.
